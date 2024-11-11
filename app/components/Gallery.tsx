@@ -20,15 +20,15 @@ export default function Gallery() {
   };
 
   return (
-    <section className="h-dvh w-full hidden lg:flex  bg-black px-10 text-white">
+    <section className="h-dvh w-full hidden lg:flex px-10 bg-[#fff9ec] text-[#f9443e] ">
       <div className=" w-2/5 h-full flex justify-center items-center">
-        <h1 className=" absolute top-10 ml-auto mr-auto left-0 right-0 font-bold text-5xl pl-16">
-          PROJECT GALERY
+        <h1 className=" absolute top-10 ml-auto mr-auto left-0 right-0 font-bold text-6xl pl-16">
+          FILMMAKER <span className="text-2xl font-normal">@Edgar Baylon</span>
         </h1>
         {selectedProject && (
           <div className="flex flex-col items-start pl-5 ">
             <Image
-              className={`w-[400px] h-[400px] transition-opacity ease-in-out duration-300  ${
+              className={`w-[450px] h-[450px] min-w-[400ox] min-h-[400px] transition-opacity ease-in-out duration-300  rounded-sm ${
                 fade ? "opacity-100" : "opacity-0"
               } `}
               src={selectedProject.image}
@@ -37,7 +37,8 @@ export default function Gallery() {
               height={500}
               priority
             />
-            <h2 className="self-start py-3 font-bold">
+            <h2 className="self-start py-3 font-bold text-xl">
+              <span className="text-sm">0{selectedProject.index + 1}</span>{" "}
               {selectedProject.title.toUpperCase()}
             </h2>
             <p className="self-start w-2/3">

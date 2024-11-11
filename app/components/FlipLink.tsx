@@ -21,7 +21,7 @@ export const FlipLink = ({
       onMouseEnter={onMouseEnter}
       className="relative block overflow-hidden whitespace-nowrap font-bold  py-1"
     >
-      <div className="text-gray-400">
+      <div className="text-red-300 ">
         {children.split("").map((l, i) => (
           <motion.span
             className="inline-block"
@@ -43,7 +43,7 @@ export const FlipLink = ({
       <div className="absolute inset-0">
         {children.split("").map((l, i) => (
           <motion.span
-            className="inline-block text-white"
+            className="inline-block  text-[#f9443e] "
             key={i}
             variants={{
               initial: { y: "100%" },

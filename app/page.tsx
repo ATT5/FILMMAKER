@@ -19,9 +19,6 @@ export default function Home() {
       </AnimatePresence>
       <Gallery />
       <MobileGallery />
-      <p className="absolute lg:bottom-5 bottom-1 right-5">
-        @Desing By Arturo Baylon
-      </p>
     </main>
   );
 }
