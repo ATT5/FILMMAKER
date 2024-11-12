@@ -41,8 +41,8 @@ export default function RootLayout({
           </a>
         </div>
         {children}
-        <p className="absolute lg:bottom-5 bottom-1 right-5">
-          @Desing By Arturo Baylon
+        <p className="absolute lg:bottom-5 bottom-0 right-5">
+          @Design By Arturo Baylon
         </p>
       </body>
     </html>

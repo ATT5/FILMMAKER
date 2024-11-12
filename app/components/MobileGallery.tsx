@@ -14,7 +14,7 @@ export const MobileGallery = () => {
       {projectList.map((item, index) => {
         const ref = useRef(null);
         const isInView = useInView(ref);
-        console.log(isInView);
+
         const isEven = index % 2 === 0;
         return (
           <motion.div

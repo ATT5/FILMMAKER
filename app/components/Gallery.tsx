@@ -28,7 +28,7 @@ export default function Gallery() {
         {selectedProject && (
           <div className="flex flex-col items-start pl-5 ">
             <Image
-              className={`w-[450px] h-[450px] min-w-[400ox] min-h-[400px] transition-opacity ease-in-out duration-300  rounded-sm ${
+              className={`w-[450px] h-[450px] min-w-[400ox] min-h-[400px] transition-opacity ease-in-out duration-300  rounded-sm fill-inherit ${
                 fade ? "opacity-100" : "opacity-0"
               } `}
               src={selectedProject.image}

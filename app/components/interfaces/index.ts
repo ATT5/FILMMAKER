@@ -3,4 +3,5 @@ export interface IGallery {
   description: string;
   image: any;
   index: number;
+  href: string;
 }

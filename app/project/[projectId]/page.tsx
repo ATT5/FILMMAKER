@@ -7,11 +7,11 @@ const ProjectDetails = ({ params }: { params: { projectId: string } }) => {
   const project = projectList[parseInt(params.projectId)];
 
   return (
-    <section className=" w-full h-screen flex  justify-center items-center  bg-[#fff9ec] text-[#f9443e] overflow-hidden">
-      <h2 className="absolute top-0  mx-auto text-xl font-bold  lg:text-7xl ">
-        FILMMAKER{" "}
-      </h2>
-      <div className="w-full flex flex-col  lg:flex-row justify-center  items-center  gap-5  pl-10">
+    <section className=" w-full h-screen flex  justify-center items-center  bg-[#fff9ec] text-[#f9443e] overflow-hidden lg:pb-0 pb-10">
+      <a className="absolute top-0  mx-auto" href="/">
+        <h2 className=" text-xl font-bold  lg:text-7xl ">FILMMAKER</h2>
+      </a>
+      <div className="w-full flex flex-col  lg:flex-row justify-center  items-center  gap-5  ">
         <motion.h1
           className="lg:self-start pr-6 text-5xl lg:text-3xl font-bold"
           initial={{ opacity: 0, x: -100 }}
@@ -22,11 +22,12 @@ const ProjectDetails = ({ params }: { params: { projectId: string } }) => {
           {project.title.toUpperCase()}
         </motion.h1>
         <motion.a
-          href="#"
+          href={project.href}
           initial={{ opacity: 0 }}
           animate={{ opacity: 100 }}
           transition={{ duration: 1, ease: "easeInOut" }}
           className="relative group"
+          target="_blank"
         >
           <Image
             src={project.image}
@@ -48,7 +49,7 @@ const ProjectDetails = ({ params }: { params: { projectId: string } }) => {
         >
           {project.description}
         </motion.p>
-        <motion.a href="">
+        <motion.a href={project.href} target="_blank">
           <motion.button
             initial={{ opacity: 0 }}
             animate={{ opacity: 100 }}
