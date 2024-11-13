@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { tiktok, instagram } from "./assets";
 import Image from "next/image";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -41,9 +42,6 @@ export default function RootLayout({
           </a>
         </div>
         {children}
-        <p className="absolute lg:bottom-5 bottom-0 right-5">
-          @Design By Arturo Baylon
-        </p>
       </body>
     </html>
   );

@@ -7,6 +7,7 @@ import portadaRiablo from "./PortadaRiablo.webp";
 import tiktok from "./tiktok.svg";
 import instagram from "./instagram.svg";
 import portadaZumitam from "./portadaZumitam.webp";
+
 export {
   nolitaIa,
   poetadaAlcaliv,
