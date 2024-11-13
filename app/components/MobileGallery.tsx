@@ -2,7 +2,7 @@ import { projectList } from "../assets/information";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-
+import { IGallery } from "./interfaces";
 export const MobileGallery = () => {
   return (
     <section className="w-full overflow-hidden pb-9 bg-[#fff9ec] text-[#f9443e] relative lg:hidden">
@@ -17,7 +17,7 @@ export const MobileGallery = () => {
   );
 };
 
-const GalleryItem = ({ item, index }: { item: any; index: any }) => {
+const GalleryItem = ({ item, index }: { item: IGallery; index: number }) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
   const isEven = index % 2 === 0;
