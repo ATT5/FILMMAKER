@@ -26,15 +26,15 @@ export const projectList: IGallery[] = [
     index: 1,
     href: "https://www.instagram.com/p/CtfGkWFsWhC/?hl=es",
   },
-
   {
-    title: "El Gorrioncillo",
+    title: "Zumitam",
     description:
-      "Linea de lanzamiento de las nuevas presentaciones del Sotol El Gorrioncillo",
-    image: portadaElgorrioncillo,
+      "Campaña de lanzamiento para la linea fuego de los productos Zumitam",
+    image: portadaZumitam,
     index: 2,
-    href: "https://www.instagram.com/p/CqHOUQRj90S/?hl=es",
+    href: "https://www.instagram.com/p/DB7ACSwSexQ/?hl=es",
   },
+
   {
     title: "Nivea",
     description:
@@ -59,13 +59,12 @@ export const projectList: IGallery[] = [
     index: 5,
     href: "https://www.instagram.com/p/CupjYxPNzSy/?hl=es",
   },
-
-  // {
-  //   title: "Zumitam",
-  //   description:
-  //     "Campaña de lanzamiento para la linea fuego de los productos Zumitam",
-  //   image: portadaZumitam,
-  //   index: 2,
-  // href: "https://www.instagram.com/p/CqHOUQRj90S/?hl=es",
-  // },
+  {
+    title: "El Gorrioncillo",
+    description:
+      "Linea de lanzamiento de las nuevas presentaciones del Sotol El Gorrioncillo",
+    image: portadaElgorrioncillo,
+    index: 6,
+    href: "https://www.instagram.com/p/CqHOUQRj90S/?hl=es",
+  },
 ];
