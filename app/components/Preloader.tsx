@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { opacity, slideUp } from "@/app/assets/animation";
 import "../globals.css";
-("../styles/globals.css");
 export function Preloader() {
   const [index, setIndex] = useState(0);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
@@ -31,13 +30,15 @@ export function Preloader() {
   useEffect(() => {
     if (index == words.length - 1) return;
 
-    setTimeout(
+    const timeout = setTimeout(
       () => {
         setIndex(index + 1);
       },
-      index == 0 ? 1000 : 150
+      index === 0 ? 1000 : 150
     );
-  }, [index]);
+
+    return () => clearTimeout(timeout);
+  }, [index, words.length]);
 
   const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
     dimension.height
