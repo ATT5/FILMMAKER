@@ -1,37 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Filmmaker Landing Page
+This project is a personalized landing page built for a filmmaker. It aims to showcase the filmmaker's portfolio, highlight skills, and attract potential clients or 
+collaborators through a sleek, modern web design.
+The site is optimized for fast performance, SEO, and smooth animations to create an engaging user experience.
 
-## Getting Started
+Features
+Portfolio Showcase: Display selected video projects with high-quality thumbnails, descriptions, and links.
 
-First, run the development server:
+About Section: Introduce the filmmaker, background, and core expertise.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Skills Section: Showcase skills and services offered, like video editing, cinematography, etc.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Contact Form: Allow potential clients to reach out easily.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Responsive Design: Optimized for all devices.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Smooth Animations: Uses framer-motion for a dynamic, engaging experience.
 
-## Learn More
+Built With
+Next.js: A React framework for optimized performance.
 
-To learn more about Next.js, take a look at the following resources:
+React: For UI components.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Tailwind CSS: For rapid and responsive styling.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Framer Motion: For animations.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# test1
+TypeScript: Ensures code safety and scalability.
