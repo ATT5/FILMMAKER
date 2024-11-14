@@ -7,7 +7,7 @@ export const MobileGallery = () => {
   return (
     <section className="w-full overflow-hidden pb-9 bg-[#fff9ec] text-[#f9443e] relative lg:hidden">
       <h1 className="text-center font-bold text-4xl p-5 lg:hidden flex flex-col">
-        FILMAKER
+        FILMMAKER
         <span className="text-xl font-normal">@Edgar Baylon</span>
       </h1>
       {projectList.map((item, index) => (
